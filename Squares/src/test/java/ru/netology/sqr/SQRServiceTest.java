@@ -1,7 +1,5 @@
 package ru.netology.sqr;
 
-//import org.junit.jupiter.api.Test;
-
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -16,52 +14,9 @@ class SQRServiceTest {
             "'count Squares when bottom line more upper bound', 300, 200, 0"})
     void countSquares(String testName, int bottomLine, int upperBound, int expected) {
         SQRService service = new SQRService();
-//
-//        int bottomLine = 200;
-//        int upperBound = 300;
-//        int expected = 3;
-//
+
         int result = service.countSquares(bottomLine, upperBound);
-//
+
         assertEquals(expected, result);
     }
-//
-//    @Test
-//    void countSquaresWhenBottomLineEqualsUpperBound() {
-//        SQRService service = new SQRService();
-//
-//        int bottomLine = 225;
-//        int upperBound = 225;
-//        int expected = 1;
-//
-//        int result = service.countSquares(bottomLine, upperBound);
-//
-//        assertEquals(expected, result);
-//    }
-//
-//    @Test
-//    void countSquaresWhenBottomLineAndUpperBoundLessTen() {
-//        SQRService service = new SQRService();
-//
-//        int bottomLine = 1;
-//        int upperBound = 9;
-//        int expected = 0;
-//
-//        int result = service.countSquares(bottomLine, upperBound);
-//
-//        assertEquals(expected, result);
-//    }
-
-//    @Test
-//    void countSquaresWhenBottomLineMoreUpperBound() {
-//        SQRService service = new SQRService();
-//
-//        int bottomLine = 300;
-//        int upperBound = 200;
-//        int expected = 0;
-//
-//        int result = service.countSquares(bottomLine, upperBound);
-//
-//        assertEquals(expected, result);
-//    }
 }
